@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <!-- Estilos de letras -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS DE BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--ESTILOS CSS  -->
+    <style>
+        .logo{
+            font-family: 'Playfair Display', serif;
+            font-size: 2.25rem;
+            font-weight: 700;
+        }
+
+        h1,h2,h3,h4,h5,h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+
+        .titulo{font-size: 2.5rem;}
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- --------------------------------------- HEADER---------------------------------------------------------------------------------- -->
+
+        <header class="py-3">
+
+            <div class="row flex-nowrap justify-content-between align-items-center"> <!--esta clase de flex-nowrap es para que cuando el dispositivo sea pequeño los elementos no se pongan debajo o no bajen de linea -->
+
+                <!-- BOTON DE SUSCRIBIRSE -->
+                <div class="col-4">
+                    <a href="#" class="btn btn-link text-muted">Suscribirse</a>
+                </div> 
+
+                <!-- LOGO -->
+                <div class="col-4 text-center">
+                    <a href="#" class="text-dark logo">Blog</a>
+                </div>
+
+
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a href="#" class="text-muted mx-3">
+                        <!-- lupa -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-secondary btn-sm">Acceder</a>
+
+                </div> <!--FIN COL-->
+
+            </div><!--FIN ROW-->
+
+         <hr><!-- --------------------------------------- NAV DEBAJO DEL LOGO---------------------------------------------------------------------------------- -->
+
+            <div class="row">
+                <nav class="nav justify-content-center">
+
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Internacional</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Tecnologia</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Diseño</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Cultura</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Politica</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Opinion</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Ciencia</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Salud</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Estilo</a>
+                    <a href="#" class="nav-link text-muted" mx-2 my-2>Viaje</a>
+
+                </nav>
+            </div><!--FIN ROW-->
+
+        </header> <!--FIN HEADER-->
+
+
+        <!-- -------------------------- CONTENIDO PRINCIPAL---------------------------------------------------------------------------------- -->
+
+        <div class="row p-3 p-md-5 mb-5 text-white rounded bg-dark">
+            <div class="col-12 col-md-6 px-0">
+                <!-- TITULO -->
+                <h1 class="display-4 font-italic">Lorem ipsum dolor sit amet.</h1>
+
+                <!-- INFORMACION -->
+                <p class="lead my-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo molestias autem minima impedit? Voluptatibus consequuntur ab unde rerum magnam maiores voluptas necessitatibus qui aspernatur? Libero repudiandae sint unde? Est, nobis?
+                </p>
+
+                <!-- ENLACE  -->
+                <p class="lead mb-0">
+                    <a href="#" class="text-white fw-bold">Continuar Leyendo...</a>
+                </p>
+
+            </div>
+
+        </div><!--FIN DIV-->
+
+
+
+        <!-- -------------------------- CONTENIDO DE LAS CARDS---------------------------------------------------------------------------------- -->
+
+        <div class="row mb-5">
+            <div class="col-12 col-md-6">
+
+                <!-- CARD 1 -->
+                <div class="card d-flex flex-md-row overflow-hidden">
+                    <div class="card-body">
+                        <!-- TITULO -->
+                        <strong class="text-primary d-inline-block mb-2">Internacional</strong>
+                        <h3>Post Destacado</h3>
+                        <p class="mb-1 text-muted"> Nov. 14</p> <!--fecha-->
+                        <!-- INFO -->
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis, cumque exercitationem eaque facilis optio fugiat!
+                        </p>
+                        <!-- LINK CONTINUAR LEYENDO -->
+                        <a href="#" class="stretched-link">Continuar Leyendo...</a><!--la clase stretched-link es para que en este caso el link abarque el 100% del espacio-->
+                    </div>
+                    <!-- FOTO DEL ARTICULO -->
+                    <img src="http://Via.placeholder.com/200x250/55595C?text=Thumbnail" class="card-img-right flex-auto d-none d-lg-block w-100" alt="">
+
+                </div><!--fin card-->
+            </div> <!--FIN ROW-->
+
+
+            <!-- CARD 2------------------------------------------------------------------------------------------------------------------------------------------------ -->
+            <div class="col-12 col-md-6">
+                <div class="card d-flex flex-md-row overflow-hidden">
+                    <div class="card-body">
+                        <!-- TITULO -->
+                        <strong class="text-success d-inline-block mb-2">Diseño</strong>
+                        <h3>Post Destacado</h3>
+                        <p class="mb-1 text-muted"> Nov. 14</p> <!--fecha-->
+                        <!-- INFO -->
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officiis, cumque exercitationem eaque facilis optio fugiat!
+                        </p>
+                        <!-- LINK CONTINUAR LEYENDO -->
+                        <a href="#" class="stretched-link">Continuar Leyendo...</a><!--la clase stretched-link es para que en este caso el link abarque el 100% del espacio-->
+                    </div>
+                    <!-- FOTO DEL ARTICULO -->
+                    <img src="http://Via.placeholder.com/200x250/55595C?text=Thumbnail" class="card-img-right flex-auto d-none d-lg-block w-100" alt="">
+
+                </div><!--fin card-->
+
+            </div><!--FIN COL-->
+
+        </div><!--FIN ROW-->  
+
+        <!-- MAIN--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+            
+            <main class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 mb-5 pd-5">
+
+                        <div class="mb-5 border-bottom pb-5">
+
+                            <!-- EJEMPLO ARTICULO 1 ---------------------------------------------------------------------------------------- -->
+                            <!-- TITULO -->
+                                <h2 class="titulo">Ejemplo de post de blog</h2>
+                            <!-- FECHA -->
+                                <p class="text-muted mb-4">Noviembre de 2023 por <a href="#">Raldy Lopez</a></p>
+                                <!-- TEXTO  -->
+                                <p>Lorem ipsum dolor sit amet. <strong> Lorem ipsum dolor sit amet consectetur.</strong>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus vitae et molestias
+                                amet laudantium, impedit sed aut cum eius.</p> 
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Lorem ipsum dolor sit amet.</a>
+                                Sed nesciunt ea rerum atque inventore dolorem repellendus recusandae ipsa sint consectetur!</p>
+                        </div><!--fin div-->
+
+
+                        <!-- ARTICULO 2 ---------------------------------------------------------------------------------------- -->
+                        <div class="mb-5 border-bottom pb-5">
+
+                            <!-- TITULO -->
+                            <h2 class="titulo">Ejemplo de post de blog</h2>
+                            <!-- FECHA -->
+                            <p class="text-muted mb-4">Noviembre de 2023 por <a href="#">Raldy Lopez</a></p>
+                            <!-- TEXTO  -->
+                            <p>Lorem ipsum dolor sit amet. <strong> Lorem ipsum dolor sit amet consectetur.</strong>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus vitae et molestias
+                            amet laudantium, impedit sed aut cum eius.</p> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Lorem ipsum dolor sit amet.</a>
+                            Sed nesciunt ea rerum atque inventore dolorem repellendus recusandae ipsa sint consectetur!</p>
+
+                        </div><!--fin div-->
+
+
+                        <!-- ARTICULO 3 ---------------------------------------------------------------------------------------- -->
+                        <div class="mb-5 border-bottom pb-5">
+
+                            <!-- TITULO -->
+                            <h2 class="titulo">Ejemplo de post de blog</h2>
+                            <!-- FECHA -->
+                            <p class="text-muted mb-4">Noviembre de 2023 por <a href="#">Raldy Lopez</a></p>
+                            <!-- TEXTO  -->
+                            <p>Lorem ipsum dolor sit amet. <strong> Lorem ipsum dolor sit amet consectetur.</strong>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus vitae et molestias
+                            amet laudantium, impedit sed aut cum eius.</p> 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Lorem ipsum dolor sit amet.</a>
+                            Sed nesciunt ea rerum atque inventore dolorem repellendus recusandae ipsa sint consectetur!</p>
+
+                        </div><!--fin div-->
+
+
+                    </div><!--fin col-->
+
+
+                    <!-- COLUMNA 1 PARTE DE LA DERECHA----------------------------------------------------------------------------------  -->
+                    <div class="col-12 col-md-4 mb-5 pb-5">
+                        <div class="p-3 mb-5 bg-light rounded">
+                            <h4 class="font-italic">Acerca de</h4>
+                            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fugiat nobis mollitia dignissimos sequi error commodi similique vitae sed voluptatum beatae?</p>
+                        </div><!--fin div-->
+
+
+                        
+                        <!-- COLUMNA 2 PARTE DE LA DERECHA----------------------------------------------------------------------------  -->
+                        <div class="p-3">
+                            <h4 class="font-italic">Archivos</h4>
+                            <ol class="list-unstyled">
+                                <li><a href="#">Enero 2023</a></li>
+                                <li><a href="#">Febrero 2023</a></li>
+                                <li><a href="#">Marzo 2023</a></li>
+                                <li><a href="#">Abril 2023</a></li>
+                                <li><a href="#">Mayo 2023</a></li>
+                                <li><a href="#">Junio 2023</a></li>
+                                <li><a href="#">Julio 2023</a></li>
+                                <li><a href="#">Agosto 2023</a></li>
+                                <li><a href="#">Septiembre 2023</a></li>
+                            </ol>
+
+                        </div> <!--FIN DIV-->
+
+
+
+                    </div><!--FIN COL-->
+
+                </div> <!--FIN ROW-->
+
+            </main> <!--FIN MAIN-->
+
+
+        <!-- FOOTER--------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+            <footer class="text-center bg-light py-5 border-top">
+                <p class="text-muted"> © 2023 - Raldy Lopez </p>
+                <p class="mb-0"><a href="#">Ir Arriba</a></p>
+
+
+            </footer>
+        
+
+
+    </div> <!--FIN CONTAINER-->
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
